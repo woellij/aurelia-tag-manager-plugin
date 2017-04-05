@@ -1,11 +1,70 @@
-# aurelia-skeleton-plugin
+# aurelia-tag-manager-plugin
 
 [![ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.io)
 [![Join the chat at https://gitter.im/aurelia/discuss](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/aurelia/discuss?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This skeleton is part of the [Aurelia](http://www.aurelia.io/) platform. It sets up a standard aurelia plugin using gulp to build your ES6 code with the Babel compiler. Karma/Jasmine testing is also configured.
+This plugin was forked from aurelia/skeleton-plugin and is part of [Aurelia](http://www.aurelia.io/) platform. It sets up a standard aurelia plugin using gulp to build your ES6 code with the Babel compiler. Karma/Jasmine testing is also configured.
 
 > To keep up to date on [Aurelia](http://www.aurelia.io/), please visit and subscribe to [the official blog](http://blog.aurelia.io/) and [our email list](http://eepurl.com/ces50j). We also invite you to [follow us on twitter](https://twitter.com/aureliaeffect). If you have questions, please [join our community on Gitter](https://gitter.im/aurelia/discuss) or use [stack overflow](http://stackoverflow.com/search?q=aurelia). Documentation can be found [in our developer hub](http://aurelia.io/hub.html). If you would like to have deeper insight into our development process, please install the [ZenHub](https://zenhub.io) Chrome or Firefox Extension and visit any of our repository's boards.
+
+
+
+
+## Installing using jspm
+jspm install github:geea-develop/aurelia-tag-manager-plugin
+
+## Using the plugin 
+
+in your main js file add
+
+aurelia.use.plugin('geea-develop/aurelia-tag-manager-plugin');
+
+Use in application
+
+1.  Basic implementation in class using jspm import
+
+    ```
+    import and inject the class
+    import {inject} from 'aurelia-framework';
+    import {TagManager} from 'geea-develop/aurelia-tag-manager-plugin';
+
+    @inject(TagManager)
+
+    constructor(tagManager) {
+      this.tagManager = tagManager;
+    }
+    ```
+  
+2.  Adding transaction example
+
+    ```
+    let products = [];
+
+    products.push({
+        'sku': reservation_no,
+        'name': cruise_name,
+        'category': cruise_type,
+        'price': cruise_price,
+        'quantity': 1
+    });
+      
+    let transaction = this.tagManager.create(
+      {
+        event: 'transaction-event',
+        attributes: {
+          'transactionId': trans_no,
+          'transactionAffiliation': 'Cruise Reservation',
+          'transactionTotal': total,
+          'transactionTax': 0,
+          'transactionShipping': 0,
+          'transactionProducts': products
+        }
+      }
+    );
+
+    this.tagManager.add(transaction);
+    ```
+
 
 ## Building The Code
 
