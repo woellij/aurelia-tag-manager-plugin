@@ -1,4 +1,4 @@
-import {DataLayerItem} from 'data-layer-item';
+import {DataLayerItem} from './data-layer-item';
 
 @inject(LogManager)
 
