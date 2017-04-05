@@ -13,11 +13,11 @@ This plugin was forked from aurelia/skeleton-plugin and is part of [Aurelia](htt
 ## Installing using jspm
 jspm install github:geea-develop/aurelia-tag-manager-plugin
 
-## using the plugin 
+## Using the plugin 
 in your main js file add
 aurelia.use.plugin('geea-develop/aurelia-tag-manager-plugin');
 
-## Use in application
+Use in application
 
 1.  Basic implementation in class using jspm import
 
@@ -62,6 +62,7 @@ aurelia.use.plugin('geea-develop/aurelia-tag-manager-plugin');
 
     this.tagManager.add(transaction);
     ```
+
 
 ## Building The Code
 
