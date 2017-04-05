@@ -1,4 +1,4 @@
-define(['exports', 'data-layer-item'], function (exports, _dataLayerItem) {
+define(['exports', './data-layer-item'], function (exports, _dataLayerItem) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {

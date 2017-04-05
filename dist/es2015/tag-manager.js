@@ -1,6 +1,6 @@
 var _dec, _class;
 
-import { DataLayerItem } from 'data-layer-item';
+import { DataLayerItem } from './data-layer-item';
 
 export let TagManager = (_dec = inject(LogManager), _dec(_class = class TagManager {
 

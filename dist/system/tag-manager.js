@@ -1,6 +1,6 @@
 'use strict';
 
-System.register(['data-layer-item'], function (_export, _context) {
+System.register(['./data-layer-item'], function (_export, _context) {
   "use strict";
 
   var DataLayerItem, _createClass, _dec, _class, TagManager;
