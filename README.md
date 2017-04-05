@@ -14,8 +14,9 @@ This plugin was forked from aurelia/skeleton-plugin and is part of [Aurelia](htt
 jspm install github:geea-develop/aurelia-tag-manager-plugin
 
 ## Using the plugin 
+
 in your main js file add
-aurelia.use.plugin('geea-develop/aurelia-tag-manager-plugin');
+-aurelia.use.plugin('geea-develop/aurelia-tag-manager-plugin');
 
 Use in application
 
