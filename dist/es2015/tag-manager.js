@@ -1,10 +1,8 @@
-var _dec, _class;
-
 import { DataLayerItem } from './data-layer-item';
 
-export let TagManager = (_dec = inject(LogManager), _dec(_class = class TagManager {
+export let TagManager = class TagManager {
 
-  constructor(logger) {
+  constructor() {
     this.dataLayer = null;
   }
 
@@ -50,4 +48,4 @@ export let TagManager = (_dec = inject(LogManager), _dec(_class = class TagManag
     return eventItem;
   }
 
-}) || _class);
+};

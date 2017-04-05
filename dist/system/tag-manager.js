@@ -3,7 +3,7 @@
 System.register(['./data-layer-item'], function (_export, _context) {
   "use strict";
 
-  var DataLayerItem, _createClass, _dec, _class, TagManager;
+  var DataLayerItem, _createClass, TagManager;
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -34,8 +34,8 @@ System.register(['./data-layer-item'], function (_export, _context) {
         };
       }();
 
-      _export('TagManager', TagManager = (_dec = inject(LogManager), _dec(_class = function () {
-        function TagManager(logger) {
+      _export('TagManager', TagManager = function () {
+        function TagManager() {
           _classCallCheck(this, TagManager);
 
           this.dataLayer = null;
@@ -86,7 +86,7 @@ System.register(['./data-layer-item'], function (_export, _context) {
         }]);
 
         return TagManager;
-      }()) || _class));
+      }());
 
       _export('TagManager', TagManager);
     }

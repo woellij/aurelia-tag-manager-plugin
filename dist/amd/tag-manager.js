@@ -30,10 +30,8 @@ define(['exports', './data-layer-item'], function (exports, _dataLayerItem) {
     };
   }();
 
-  var _dec, _class;
-
-  var TagManager = exports.TagManager = (_dec = inject(LogManager), _dec(_class = function () {
-    function TagManager(logger) {
+  var TagManager = exports.TagManager = function () {
+    function TagManager() {
       _classCallCheck(this, TagManager);
 
       this.dataLayer = null;
@@ -84,5 +82,5 @@ define(['exports', './data-layer-item'], function (exports, _dataLayerItem) {
     }]);
 
     return TagManager;
-  }()) || _class);
+  }();
 });

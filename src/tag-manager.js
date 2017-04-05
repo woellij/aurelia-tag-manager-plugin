@@ -1,12 +1,10 @@
 import {DataLayerItem} from './data-layer-item';
 
-@inject(LogManager)
-
 export class TagManager {
 
   _dataLayer;
 
-  constructor(logger) {
+  constructor() {
     this.dataLayer = null;
   }
 
