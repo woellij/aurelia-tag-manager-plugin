@@ -1,6 +1,4 @@
-export class DataLayerItem {
-
-  _attributes;
+export let DataLayerItem = class DataLayerItem {
 
   constructor() {
     this.name = 'Date Layer Item';
@@ -20,4 +18,4 @@ export class DataLayerItem {
     this._attributes = value;
   }
 
-}
+};

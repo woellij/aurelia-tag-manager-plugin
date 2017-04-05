@@ -1,10 +1,8 @@
-import {DataLayerItem} from 'data-layer-item';
+var _dec, _class;
 
-@inject(LogManager)
+import { DataLayerItem } from 'data-layer-item';
 
-export class TagManager {
-
-  _dataLayer;
+export let TagManager = (_dec = inject(LogManager), _dec(_class = class TagManager {
 
   constructor(logger) {
     this.dataLayer = null;
@@ -29,13 +27,12 @@ export class TagManager {
       return false;
     }
 
-    if (! (dataLayerItem instanceof DataLayerItem)) {
+    if (!(dataLayerItem instanceof DataLayerItem)) {
       console.error('tag-manager data-layer-item invalid');
       return false;
     }
 
     return this.dataLayer.push(dataLayerItem.attributes);
-
   }
 
   save() {
@@ -45,7 +42,6 @@ export class TagManager {
     }
 
     this.dataLayer.push();
-
   }
 
   create(attr) {
@@ -54,4 +50,4 @@ export class TagManager {
     return eventItem;
   }
 
-}
+}) || _class);

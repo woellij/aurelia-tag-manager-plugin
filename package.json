@@ -1,22 +1,23 @@
 {
-  "name": "aurelia-skeleton-plugin",
-  "version": "1.0.1",
-  "description": "A starter kit for building an Aurelia plugin.",
+  "name": "aurelia-tag-manager-plugin",
+  "version": "1.0.2",
+  "description": "Aurelia tag manager plugin plugin.",
   "keywords": [
     "aurelia",
     "plugin",
-    "skeleton"
+    "tag-manager",
+    "gtm"
   ],
   "homepage": "http://aurelia.io",
   "bugs": {
-    "url": "https://github.com/aurelia/skeleton-plugin/issues"
+    "url": "https://github.com/geea-develop/aurelia-tag-manager-plugin/issues"
   },
   "license": "CC0-1.0",
-  "author": "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)",
+  "author": "Guy Ambar <guy@algomasystems.com> (http://algomasystems.com/)",
   "main": "dist/commonjs/index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/aurelia/skeleton-plugin"
+    "url": "http://github.com/geea-develop/aurelia-tag-manager-plugin"
   },
   "devDependencies": {
     "aurelia-tools": "^1.0.0",
