@@ -21,6 +21,7 @@ aurelia.use.plugin('geea-develop/aurelia-tag-manager-plugin');
 
 1.  Basic implementation in class using jspm import
 
+    ```
     import and inject the class
     import {inject} from 'aurelia-framework';
     import {TagManager} from 'geea-develop/aurelia-tag-manager-plugin';
@@ -30,9 +31,11 @@ aurelia.use.plugin('geea-develop/aurelia-tag-manager-plugin');
     constructor(tagManager) {
       this.tagManager = tagManager;
     }
+    ```
   
 2.  Adding transaction example
 
+    ```
     let products = [];
 
     products.push({
@@ -58,6 +61,7 @@ aurelia.use.plugin('geea-develop/aurelia-tag-manager-plugin');
     );
 
     this.tagManager.add(transaction);
+    ```
 
 ## Building The Code
 
