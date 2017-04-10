@@ -8,7 +8,6 @@ export class DataLayerItem {
   }
 
   create(attr) {
-    this.logger.info('create-data-layer-item');
     this._attributes = attr;
   }
 
