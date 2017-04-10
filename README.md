@@ -15,16 +15,13 @@ jspm install github:geea-develop/aurelia-tag-manager-plugin
 
 ## Using the plugin 
 
-in your main js file add
-
-aurelia.use.plugin('geea-develop/aurelia-tag-manager-plugin');
-
 Use in application
 
 1.  Basic implementation in class using jspm import
+    import and inject the class
 
     ```
-    import and inject the class
+   
     import {inject} from 'aurelia-framework';
     import {TagManager} from 'geea-develop/aurelia-tag-manager-plugin';
 
