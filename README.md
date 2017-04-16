@@ -1,5 +1,7 @@
 # aurelia-tag-manager-plugin
 
+``based on https://developers.google.com/tag-manager/devguide#datalayer and https://developers.google.com/tag-manager/enhanced-ecommerce``
+
 [![ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.io)
 [![Join the chat at https://gitter.im/aurelia/discuss](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/aurelia/discuss?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -9,11 +11,15 @@ This plugin was forked from aurelia/skeleton-plugin and is part of [Aurelia](htt
 
 
 
-
 ## Installing using jspm
 jspm install github:geea-develop/aurelia-tag-manager-plugin
 
-## Using the plugin 
+## GTM implementation
+
+1.  Add in index.html your gtm code according to
+    https://developers.google.com/tag-manager/quickstart
+
+## Using the plugin
 
 Use in application
 
@@ -21,7 +27,7 @@ Use in application
     import and inject the class
 
     ```
-   
+
     import {inject} from 'aurelia-framework';
     import {TagManager} from 'geea-develop/aurelia-tag-manager-plugin';
 
@@ -31,7 +37,7 @@ Use in application
       this.tagManager = tagManager;
     }
     ```
-  
+
 2.  Adding transaction example
 
     ```
@@ -44,7 +50,7 @@ Use in application
         'price': cruise_price,
         'quantity': 1
     });
-      
+
     let transaction = this.tagManager.create(
       {
         event: 'transaction-event',
