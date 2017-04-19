@@ -29,7 +29,7 @@ Use in application
     ```
 
     import {inject} from 'aurelia-framework';
-    import {TagManager} from 'geea-develop/aurelia-tag-manager-plugin';
+    import {TagManager} from 'geea-develop/aurelia-tag-manager-plugin/tag-manager';
 
     @inject(TagManager)
 
