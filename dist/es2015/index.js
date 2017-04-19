@@ -1,3 +1,1 @@
-export function configure(config) {
-  config.globalResources('./tag-manager');
-}
+export function configure(config) {}

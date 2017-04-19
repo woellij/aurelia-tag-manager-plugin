@@ -38,7 +38,6 @@ define(['exports'], function (exports) {
     }
 
     DataLayerItem.prototype.create = function create(attr) {
-      this.logger.info('create-data-layer-item');
       this._attributes = attr;
     };
 

@@ -41,6 +41,12 @@ define(['exports', './data-layer-item'], function (exports, _dataLayerItem) {
       this._dataLayer = window.dataLayer || null;
     };
 
+    TagManager.prototype.create = function create(attr) {
+      var eventItem = new _dataLayerItem.DataLayerItem();
+      eventItem.create(attr);
+      return eventItem;
+    };
+
     TagManager.prototype.add = function add(dataLayerItem) {
       if (this.dataLayer == null) {
         console.error('tag-manager data-layer not found');
@@ -62,12 +68,6 @@ define(['exports', './data-layer-item'], function (exports, _dataLayerItem) {
       }
 
       this.dataLayer.push();
-    };
-
-    TagManager.prototype.create = function create(attr) {
-      var eventItem = new _dataLayerItem.DataLayerItem();
-      eventItem.create(attr);
-      return eventItem;
     };
 
     _createClass(TagManager, [{

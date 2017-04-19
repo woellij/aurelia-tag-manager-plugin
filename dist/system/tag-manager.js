@@ -45,6 +45,12 @@ System.register(['./data-layer-item'], function (_export, _context) {
           this._dataLayer = window.dataLayer || null;
         };
 
+        TagManager.prototype.create = function create(attr) {
+          var eventItem = new DataLayerItem();
+          eventItem.create(attr);
+          return eventItem;
+        };
+
         TagManager.prototype.add = function add(dataLayerItem) {
           if (this.dataLayer == null) {
             console.error('tag-manager data-layer not found');
@@ -66,12 +72,6 @@ System.register(['./data-layer-item'], function (_export, _context) {
           }
 
           this.dataLayer.push();
-        };
-
-        TagManager.prototype.create = function create(attr) {
-          var eventItem = new DataLayerItem();
-          eventItem.create(attr);
-          return eventItem;
         };
 
         _createClass(TagManager, [{

@@ -41,7 +41,6 @@ System.register([], function (_export, _context) {
         }
 
         DataLayerItem.prototype.create = function create(attr) {
-          this.logger.info('create-data-layer-item');
           this._attributes = attr;
         };
 

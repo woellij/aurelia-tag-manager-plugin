@@ -19,6 +19,12 @@ export let TagManager = class TagManager {
     this._dataLayer = window.dataLayer || null;
   }
 
+  create(attr) {
+    let eventItem = new DataLayerItem();
+    eventItem.create(attr);
+    return eventItem;
+  }
+
   add(dataLayerItem) {
     if (this.dataLayer == null) {
       console.error('tag-manager data-layer not found');
@@ -40,12 +46,6 @@ export let TagManager = class TagManager {
     }
 
     this.dataLayer.push();
-  }
-
-  create(attr) {
-    let eventItem = new DataLayerItem();
-    eventItem.create(attr);
-    return eventItem;
   }
 
 };
